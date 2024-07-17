@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh Vu Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/fucalor right eyes.PNG" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Minh</span> Vu<br>from Vietnam</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- about --------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- TODO: add self portrai image -->
+                    <img src="images/Minh-portrait.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, possimus impedit autem dolor mollitia numquam molestias ea provident eius et facere a quos sed labore quibusdam ipsum dicta consequatur excepturi.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Development</span><br>Creating Software</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>Game Development</span><br>Building Games</li>
+                            <li><span>Web Development</span><br>Designing Web application </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2024 - current</span><br>3D Parkour game</li>
+                            <li><span>March 2024 - May 2024</span><br>HuskyHaze - Android Weather App</li>
+                            <li><span>March 2024 - May 2024</span><br>Huscii Bytes - Recipe Website</li>
+                            <li><span>March 2024 - May 2024</span><br>Library Website</li>
+                            <li><span>Sep 2023 - Dec 2023</span><br>Dungeon Adventure - Java Game</li>
+                            <li><span>Jan 2023 - March 2023</span><br>Tetris - Java Game</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-current</span><br>University Of Washington</li>
+                            <li><span>2020-2022</span><br>Tacoma Community College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

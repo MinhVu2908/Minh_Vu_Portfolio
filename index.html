@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minh Vu Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/HaAnh.png">
+    
+    <script src="https://kit.fontawesome.com/298bc155bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="images/fucalor right eyes.PNG" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
             </nav>
+
+           
             <div class="header-text">
                 <p>Software Developer</p>
                 <h1>Hi, I'm <span>Minh</span> Vu<br>from Vietnam</h1>
@@ -70,7 +78,131 @@
             </div>
         </div>
     </div>
+<!-- --------------services------------ -->
 
-    <script src="index.js"></script>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Developer</h2>
+                <p>I specialize in designing and developing robust software solutions tailored to meet your business needs. From desktop applications to enterprise-level systems, I leverage the latest technologies and best practices to deliver high-quality, scalable, and maintainable software.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>As a web developer, I create dynamic and responsive websites that provide a seamless user experience across all devices. My expertise includes front-end and back-end development, ensuring that your website is not only visually appealing but also fast, secure, and easy to navigate.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Developer</h2>
+                <p>Passionate about gaming, I develop engaging and immersive games for various platforms. From concept to completion, I handle game design, programming, and testing to deliver an enjoyable and high-quality gaming experience that keeps players coming back for more.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <h2>Mobile App Developer</h2>
+                <p>With expertise in both iOS and Android development, 
+                    I create intuitive and user-friendly mobile applications 
+                    that help you reach a wider audience. Whether you need a business app, a social media platform, 
+                    or a mobile game, I ensure your app stands out in the competitive app market.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/DungeonAdventure.PNG">
+                    <div class="layer">
+                        <h3>Dungeon Adventure</h3>
+                        <p>This is the Dungeon Adventure Game, where user 
+                            can explore the dungeon and fight the monsters.
+                        </p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/Mobile App.PNG">
+                    <div class="layer">
+                        <h3>HuskyHaze</h3>
+                        <p>A weather apps that includes weather conditions for the area of your choice.
+                            Including features such as picking location and News around that area.
+                        </p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/Minh-portrait.png">
+                    <div class="layer">
+                        <h3>Library Website</h3>
+                        <p>the website displays all the books that exists in the library.
+                             User can look up the books based on different category.
+                        </p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- ---------------contact------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> vuminh29082001@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 2063562127</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/minh-vu-1a6a9b2a9/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/minhv2UWT"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Minh_Vu_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Minh Vu" required>
+                    <input type="email" name="Email" placeholder="vuminh29082001@gmail.com" required>
+                    <textarea name="Message" rows="6" placeholder="Hello"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Minh, Made with <i class="fas fa-heart"></i></p>
+    </div>
+ </div>
+ <script src="index.js"></script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzGAWY5bTwB8Sgfr9PFTKK8U5sb0Ly_dVK3fF9UMenVcDBPqBN4LCZGxD3cPfB5w6AHDw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Submission completed"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>

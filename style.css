@@ -16,7 +16,7 @@ body {
     width: 100%;
     height: 100vh;
     /* TODO: CHANGE IMAGE */
-    background-image: url();
+    background-image: url(images/electricity02.gif);
     background-size: cover;
     background-position: center;
 }
@@ -30,9 +30,12 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .logo {
-    width: 140px;
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -338,7 +341,8 @@ nav .fas{
 }
 @media only screen and (max-width: 500px    ) {
     #header {
-        background-image: url(images/HaAnh.png);
+        /* TODO: Change IMage */
+        background-image: url(images/electricity02.gif);
     }
     .header-text {
         margin-top: 100%;
